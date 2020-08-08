@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+}
+.domain path {
+  display: none;
+}
+.marker-line {
+  fill: none;
+  stroke: rgba(0,0,0,0.3);
+  stroke-width: 1px;
+}
+.marker-line.active {
+  stroke: black;
+  stroke-width: 3px;
+}
+text {
+  font-size: 2em;
+}
+.domain {
+  display: none;
+}
+.tick line {
+  stroke: #dedede;
+}
+.tick text {
+  fill: #565656;
+  font-size: 14px;
+}
+.axis-label, .tooltip, .title, .tooltip-stroke {
+  fill: #808080;
+  font-size: 18px
+}
+.tooltip-stroke {
+  stroke: white;
+  stroke-width: 4px;
+}
+.tooltip, .title {
+  fill: black;
+}
+.voronoi path {
+  fill: none;
+  /* Uncomment the next line to see voronoi shapes. */
+  /*stroke: green;*/
+  pointer-events: all;
+}
